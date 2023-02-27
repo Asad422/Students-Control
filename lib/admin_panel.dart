@@ -202,7 +202,7 @@ db
 
           SizedBox(height: 30,),
                       Container(
-                         width: 282,
+                         width: 283,
                             height: 250,
                         child:
                    SwtichScroll() ),
