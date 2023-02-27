@@ -117,9 +117,8 @@ db
       appBar: AppBar (title :Text('Админ - панель'),  backgroundColor: Color.fromRGBO(24,31,199,1),),
 
       body: 
-      Padding(
-        padding: EdgeInsets.only(top: 100),
-        child :
+       SingleChildScrollView(
+        child:
       Center(
        
                 child:
@@ -188,7 +187,7 @@ db
 	                            decoration: InputDecoration(
                                 prefixIcon: Icon(Icons.abc,color: Color.fromRGBO(231, 38, 122, 1)),
 	                              border: InputBorder.none,
-	                              hintText: "Имя Фамилия Отчество",
+	                              hintText: "Имя Фамилия ",
 	                              hintStyle: TextStyle(color: Colors.grey[400])
 	                            ),
 	                          ),
@@ -199,14 +198,16 @@ db
 	                      ],
 	                    ),
 	                  ),
-                      SizedBox(height: 30,),
+                     
 
-
+          SizedBox(height: 30,),
                       Container(
                          width: 283,
                             height: 250,
                         child:
                    SwtichScroll() ),
+           SizedBox(height: 30,),
+                   
                           InkWell(onTap: (){
                           
 

@@ -383,7 +383,7 @@ class HomeState extends State<Home> {
                   )
                 ),
                 Container(
-                  height: 400,
+                  height: 200,
                   child: ListView.builder(
                       itemCount: ff.length,
                       itemBuilder: (BuildContext context, int index) {
@@ -406,8 +406,8 @@ class HomeState extends State<Home> {
                                 )));
                       }),
                 ),
-                Row(mainAxisAlignment: MainAxisAlignment.end, children: [
-                  Padding(padding:EdgeInsets.only(top: 30) ,child: 
+                Row(mainAxisAlignment : MainAxisAlignment.end,                children: [
+              
                   FloatingActionButton(
                       backgroundColor: Color.fromRGBO(
                         231,
@@ -421,10 +421,10 @@ class HomeState extends State<Home> {
                         _signOut();
                        Navigator.pushAndRemoveUntil( context, MaterialPageRoute(builder: (context) => LoggingIn()), (Route<dynamic> route) => false, ); 
                       },
-                      child: Icon(Icons.logout_sharp)))
+                      child: Icon(Icons.logout_sharp))
                 ]),
-              ])),
-        );
+            ]),
+        ));
       },
     );
   }
