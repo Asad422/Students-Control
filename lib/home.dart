@@ -323,17 +323,17 @@ class HomeState extends State<Home> {
               backgroundColor: Color.fromRGBO(24, 31, 199, 1),
               child:
                   Column(mainAxisAlignment: MainAxisAlignment.start, children: [
-                Padding(
-                    padding: EdgeInsets.only(
-                      top: 40,
+                
+                    Padding(
+                      padding: const EdgeInsets.only(top: 40),
+                      child: DrawerHeader(
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage("assets/images/avatar.png"),
+                                fit: BoxFit.contain)),
+                        child: null,
+                      ),
                     ),
-                    child: DrawerHeader(
-                      decoration: BoxDecoration(
-                          image: DecorationImage(
-                              image: AssetImage("assets/images/avatar.png"),
-                              fit: BoxFit.contain)),
-                      child: null,
-                    )),
                 Visibility(
                     visible: !permission_panel,
                     child: Text(
