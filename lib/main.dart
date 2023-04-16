@@ -21,7 +21,7 @@ Future<void> main() async {
 
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(options: FirebaseOptions(apiKey: 'AIzaSyBQrsfSOTBADkbYOUTv7v8uyYBDH8-LXXA', appId: '1:103498613498:web:0f05dd9187c0d12c5f3f43', messagingSenderId: '', projectId: 'missingpeople-367f5'));
   FirebaseFirestore.instance.settings = Settings(persistenceEnabled: false);
   runApp(MyApp());
 }
